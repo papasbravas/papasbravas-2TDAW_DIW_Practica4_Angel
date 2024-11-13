@@ -1,0 +1,55 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+img{
+    max-width: 100%;
+}
+body{
+    background-color: #E0F8E0;
+}
+a{
+    text-decoration: none;
+    font-weight: bold;
+}
+footer{
+    background-color: #0077BE;
+    color: white;
+}
+footer a{
+    color: white;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header{
+    margin: auto;
+    width: 100%;  
+    background-color: black;
+}
+nav > #logo{
+    width: 10%;
+    margin-left: 4%;
+}
+nav > #enlaces{
+    margin-left: 20%;
+    width: 85%;
+}
+#enlaces a{
+    margin-left: 2%;
+    font-size: 24px;
+    color: white;
+}
+#enlaces a:last-child{
+    margin-left: 40%;
+}
+
+#slider1{
+    margin: auto;
+    align-items: center;
+    width: 60%;
+    padding-top: 2%;
+}
