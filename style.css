@@ -20,6 +20,7 @@ footer{
 footer a{
     color: white;
 }
+/* Zona Header */
 nav{
     display: flex;
     justify-content: space-between;
@@ -47,9 +48,55 @@ nav > #enlaces{
     margin-left: 40%;
 }
 
+/* Zona Slider Index */
 #slider1{
     margin: auto;
     align-items: center;
     width: 60%;
     padding-top: 2%;
+}
+
+/* Zona Img Index */
+.contenedor-productos {
+    display: flex;
+    width: 70%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.tarjeta-producto {
+    text-align: center;
+    max-width: 100%;
+}
+
+.imagen-producto {
+    background-color: white;
+    border-radius: 15px;
+    padding: 10%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+.imagen-producto img {
+    width: 100px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.imagen-producto:hover {
+    transform: scale(1.05);
+}
+
+.imagen-producto img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.descripcion-producto {
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+    color: #333;
 }
