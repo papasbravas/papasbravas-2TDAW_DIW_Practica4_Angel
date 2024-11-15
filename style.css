@@ -20,6 +20,7 @@ footer{
 footer a{
     color: white;
 }
+
 /* Zona Header */
 nav{
     display: flex;
@@ -43,9 +44,17 @@ nav > #enlaces{
     margin-left: 2%;
     font-size: 24px;
     color: white;
+    font-family: 'Poppins', sans-serif ;
+    font-weight: normal;
 }
 #enlaces a:last-child{
-    margin-left: 40%;
+    margin-left: 35%;
+    background-color: #FFD700;
+    padding: 3% 1%;
+    color: black;
+}
+#enlaces a:last-child:hover{
+    background-color: #1ED8AB;
 }
 
 /* Zona Slider Index */
@@ -80,7 +89,7 @@ nav > #enlaces{
 }
 .imagen-producto img {
     width: 100px;
-    height: 200px;
+    height: 240px;
     object-fit: cover;
     border-radius: 10px;
 }
@@ -94,9 +103,78 @@ nav > #enlaces{
     border-radius: 10px;
 }
 
+/* Zona Enlaces Index */
 .descripcion-producto {
     font-weight: bold;
     margin-top: 10px;
+    font-size: 24px;
+    font-family:'Montserrat';
     text-align: center;
     color: #333;
 }
+
+#enlace .contenedor-productos div{
+    margin: auto;
+    text-align: center;
+    width: 33%;
+}
+
+#enlace .contenedor-productos > div p{
+    font-size: 20px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    padding: 4% 0;
+}
+#enlace .contenedor-productos > div a{
+    font-size: 20px;
+    color: black;
+    background-color: #FFD700;
+    padding: 2% 9%;
+    font-family: 'Montserrat';
+}
+#enlace .contenedor-productos > div a:hover{
+    background-color: #1ED8AB;
+    font-family: 'Montserrat';
+}
+
+/* Zona Destacados Index */
+#destacados>div{
+    width: 90%;
+    margin: auto;
+}
+#destacados>div>h2{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 4%;
+    padding-top: 4%;
+}
+#destacados>div>div:nth-child(2){
+    display: flex;
+}
+#destacados>div>div:nth-child(2)>div:nth-child(1) img{
+    width: 70%;
+}
+#destacados>div>div:nth-child(2)>div:nth-child(2) h2{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 2%;
+    font-weight: bold;
+}
+#destacados>div>div:nth-child(2)>div:nth-child(2){
+    width: 80%;
+}
+#destacados>div>div:nth-child(2)>div:nth-child(2) p{
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Montserrat';
+    padding-bottom: 5%;
+}
+
+
+
+
