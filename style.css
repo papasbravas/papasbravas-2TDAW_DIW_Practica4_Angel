@@ -13,6 +13,10 @@ a{
     text-decoration: none;
     font-weight: bold;
 }
+/*  */
+
+
+/* Zona Footer */
 footer {
     background-color: #0077BE;
     color: white;
@@ -73,12 +77,17 @@ footer .enlaces a {
     color: white;
     text-decoration: none;
     font-size: 14px;
+    width: 30%;
+    margin: auto;
+    line-height: 22px;
     transition: color 0.3s;
 }
 
 footer .enlaces a:hover {
     color: #FFD700;
 }
+/*  */
+
 
 /* Zona Header */
 nav{
@@ -115,6 +124,8 @@ nav > #enlaces{
 #enlaces a:last-child:hover{
     background-color: #1ED8AB;
 }
+/*  */
+
 
 /* Zona Slider Index */
 #slider1{
@@ -123,6 +134,8 @@ nav > #enlaces{
     width: 60%;
     padding-top: 2%;
 }
+/*  */
+
 
 /* Zona Img Index */
 .contenedor-productos {
@@ -162,7 +175,7 @@ nav > #enlaces{
 .imagen-producto:hover {
     transform: scale(1.05);
 }
-
+/*  */
 
 
 /* Zona Enlaces Index */
@@ -210,6 +223,8 @@ nav > #enlaces{
     background-color: #1ED8AB;
     font-family: 'Montserrat';
 }
+/*  */
+
 
 /* Zona Destacados Index */
 #destacados>div{
@@ -282,7 +297,138 @@ nav > #enlaces{
     font-family: 'Montserrat';
     padding-bottom: 5%;
 }
+/*  */
 
 
+/* Zona Origen Info */
+#nuestro-origen{
+    padding-top: 3%;
+}
+.contenedor-origen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.imagen-origen img {
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid #333;
+    object-fit: cover;
+}
+
+.texto-origen {
+    max-width: 550px;
+    text-align: left;
+}
+
+.texto-origen h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: 'Poppins' sans-serif;
+}
+
+.texto-origen p {
+    font-size: 24px;
+    line-height: 1.6;
+    font-family: 'Montserrat';
+}
+/*  */
+
+
+/* Zona Valores Info */
+.seccion-otaku {
+    padding-top: 3%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-bottom: 3%;
+}
+
+.titulo-principal {
+    font-size: 36px;
+    margin-bottom: 25px;
+    text-align: center;
+    margin-top: 0;
+    font-family: 'Poppins' sans-serif;
+}
+
+.seccion-mision-valores {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.carta-mision,
+.carta-valores {
+    border-radius: 12px;
+    padding: 20px;
+    width: 280px;
+    margin: 10px;
+    text-align: center;
+}
+
+.icono {
+    max-width: 100%;
+    margin-bottom: 15px;
+}
+
+.texto-carta {
+    font-size: 24px;
+    line-height: 1.5;
+    font-family: 'Montserrat';
+}
+
+.seccion-vision {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.icono-vision {
+    max-width: 100%;
+    width: 50%;
+    margin-bottom: 15px;
+}
+
+.texto-vision {
+    font-size: 24px;
+    line-height: 1.5;
+    font-family: 'Montserrat';
+}
+/*  */
+
+
+/* Zona Banner 1 Catalogo */
+.catalogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    overflow: hidden;
+}
+.productos {
+    display: flex;
+    width: 100%;
+}
+.producto {
+    flex: 1;
+}
+.producto img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+}
+.producto img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
 
 
