@@ -433,59 +433,164 @@ nav > #enlaces{
 }
 
 /* Zona Camisetas Catalogo */
-/* Arreglar tamaños imagenes */
-.descripcion-producto {
-    font-weight: bold;
-    margin-top: 10px;
-    font-size: 24px;
-    font-family:'Montserrat';
+.titulo-seccion {
+    font-size: 36px;
     text-align: center;
-    color: #333;
+    margin-bottom: 30px;
 }
 
-#camis .contenedor-productos {
+.titulo-catalogo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 2%;
+}
+
+#catalogo-camisetas .contenedor-camisetas {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 9%;
     margin: auto;
+    flex-wrap: wrap;
 }
 
-#camis .contenedor-productos div {
+.camiseta {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     text-align: center;
-    width: 90%;
+    width: 300px;
 }
 
-#camis .contenedor-productos > div p{
+.imagen-camiseta img {
+    width: 100%;
+    border-radius: 10px;
+    height: 300px;
+    object-fit: cover;
+}
+
+#catalogo-camisetas .contenedor-camisetas > .camiseta p {
     font-size: 20px;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     padding: 4% 0;
 }
-#camis .contenedor-productos > div a{
+
+#catalogo-camisetas .contenedor-camisetas > .camiseta a {
     font-size: 24px;
     color: black;
     background-color: #FFD700;
     padding: 2% 9%;
-    font-family: 'Montserrat';
-}
-#camis .contenedor-productos > div a:hover{
-    background-color: #1ED8AB;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
 }
 
-/* Arreglar esto */
-.slider2{
+#catalogo-camisetas .contenedor-camisetas > .camiseta a:hover {
+    background-color: #1ED8AB;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.banner-catalogo {
+    padding-top: 4%;
     margin: auto;
     width: 70%;
-    padding-top: 2%;
     text-align: center;
 }
-.slider2 img{
-    height: 300px;
+
+.banner-catalogo img {
+    width: 100%;
+    height: 280px;
+    object-fit:cover;
+    border-radius: 10px;
+}
+
+/* Zona Slider Catalogo */
+#catalogo-zapatillas {
+    text-align: center;
+    padding: 20px;
+}
+
+.titulo-slider {
+    font-size: 36px;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.contenedor-slider {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    text-align: center;
+}
+
+.slide img {
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.slide p {
+    font-size: 32px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.slide a {
+    display: inline-block;
+    padding: 2% 2%;
+    background-color: #FFD700;
+    color: #000;
+    font-weight: normal;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.slide a:hover {
+    background-color: #1ED8AB;
+}
+
+.flecha {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.flecha.izquierda {
+    left: 10px;
+}
+
+.flecha.derecha {
+    right: 10px;
+}
+
+.flecha:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.activo {
+    opacity: 1;
 }
 
 
