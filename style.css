@@ -267,24 +267,24 @@ nav > #enlaces{
 
 
 /* Zona Destacados Index */
-#destacados>div{
+.destacados>div{
     width: 90%;
     margin: auto;
 }
-#destacados>div>h2{
+.destacados>div>h2{
     text-align: center;
     font-size: 40px;
     font-family: 'Poppins', sans-serif;
     padding-bottom: 4%;
     padding-top: 4%;
 }
-#destacados>div>div:nth-child(2){
+.destacados>div>div:nth-child(2){
     display: flex;
 }
-#destacados>div>div:nth-child(2)>div:nth-child(1) img{
+.destacados>div>div:nth-child(2)>div:nth-child(1) img{
     width: 70%;
 }
-#destacados>div>div:nth-child(2)>div:nth-child(2) h2{
+.destacados>div>div:nth-child(2)>div:nth-child(2) h2{
     text-align: center;
     font-size: 30px;
     font-family: 'Poppins', sans-serif;
@@ -292,10 +292,10 @@ nav > #enlaces{
     padding-top: 5%;
     font-weight: bold;
 }
-#destacados>div>div:nth-child(2)>div:nth-child(2){
+.destacados>div>div:nth-child(2)>div:nth-child(2){
     width: 80%;
 }
-#destacados>div>div:nth-child(2)>div:nth-child(2) p{
+.destacados>div>div:nth-child(2)>div:nth-child(2) p{
     width: 70%;
     text-align: center;
     margin: auto;
@@ -305,22 +305,22 @@ nav > #enlaces{
     padding-bottom: 5%;
 }
 
-#destacados > div > div:nth-child(3) {
+.destacados > div > div:nth-child(3) {
     display: flex;
     flex-direction: row-reverse;
     padding-top: 3%;
 }
 
-#destacados > div > div:nth-child(3) > div:nth-child(1) img {
+.destacados > div > div:nth-child(3) > div:nth-child(1) img {
     width: 70%;
 }
 
-#destacados > div > div:nth-child(3) > div:nth-child(2) {
+.destacados > div > div:nth-child(3) > div:nth-child(2) {
     width: 80%;
     text-align: center;
 }
 
-#destacados > div > div:nth-child(3) > div:nth-child(2) h2 {
+.destacados > div > div:nth-child(3) > div:nth-child(2) h2 {
     padding-top: 5%;
     text-align: center;
     font-size: 30px;
@@ -329,7 +329,7 @@ nav > #enlaces{
     font-weight: bold;
 }
 
-#destacados > div > div:nth-child(3) > div:nth-child(2) p {
+.destacados > div > div:nth-child(3) > div:nth-child(2) p {
     width: 70%;
     margin: auto;
     font-size: 22px;
@@ -370,13 +370,13 @@ nav > #enlaces{
     font-size: 36px;
     font-weight: bold;
     margin-bottom: 20px;
-    font-family: 'Poppins' sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .texto-origen p {
     font-size: 24px;
     line-height: 1.6;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
 }
 /*  */
 
@@ -394,7 +394,7 @@ nav > #enlaces{
     margin-bottom: 25px;
     text-align: center;
     margin-top: 0;
-    font-family: 'Poppins' sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .seccion-mision-valores {
@@ -450,13 +450,11 @@ nav > #enlaces{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 99.1vw;
     overflow: hidden;
 }
 .productos {
     display: flex;
     width: 100%;
-    
 }
 .producto-in {
     flex: 1;
@@ -546,75 +544,96 @@ nav > #enlaces{
 }
 
 /* Zona Slider Catalogo */
-#catalogo-zapatillas {
-    text-align: center;
-    padding: 20px;
-}
-
-.titulo-slider {
-    font-size: 36px;
-    font-family: 'Poppins', sans-serif;
-    padding-top: 2%;
-    padding-bottom: 2%;
-}
-
-.contenedor-slider {
-    position: relative;
-    width: 80%;
-    margin: 0 auto;
-    overflow: hidden;
-}
-
-.slider {
+#catalogo-zapatillas #contenedor-zapatillas {
     display: flex;
-    transition: transform 0.4s ease-in-out;
+    justify-content: center;
+    margin: auto;
+    flex-wrap: wrap;
 }
-
-.slide {
-    min-width: 100%;
+.zapatilla {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
 }
-
-.slide img {
-    width: 500px;
-    height: auto;
-    border-radius: 10px;
+.imagen-zapatilla img {
+    height: 400px;
+    object-fit: cover;
+}
+/* Arreglar para que la central sea más grande que las otras y hacer slider */
+.peq{
+    scale: 0.5;
+}
+.imagen-zapatilla img:hover {
+    transform: scale(1.2);
+    padding-bottom: 5%;
 }
 
-.slide p {
-    font-size: 32px;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    font-family: 'Poppins', sans-serif;
-}
-
-.slide a {
-    display: inline-block;
-    padding: 2% 2%;
-    background-color: #FFD700;
-    color: #000;
-    font-weight: normal;
-    text-decoration: none;
-    border-radius: 5px;
+#catalogo-zapatillas #contenedor-zapatillas > .zapatilla a {
     font-size: 24px;
+    color: black;
+    background-color: #FFD700;
+    padding: 2% 9%;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+#catalogo-zapatillas  #contenedor-zapatillas > .zapatilla a:hover {
+    background-color: #1ED8AB;
     font-family: 'Montserrat', sans-serif;
 }
-
-.slide a:hover {
-    background-color: #1ED8AB;
+#catalogo-zapatillas #contenedor-zapatillas > .zapatilla p {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    padding: 4% 0;
 }
 
-.flecha {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    border: none;
+/* Zona Pantalones Catalogo */
+/* Desarrollar mejor este section */
+#catalogo-pant{
+    padding-bottom: 3%;
+}
+#catalogo-pant #contenedor-pant {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    flex-wrap: wrap;
+    gap: 30%;
+}
+.pant {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.imagen-pant img {
+    width: 400px;
+    height: 700px;
+    transition: transform 0.5s;
+    /* object-fit: cover; */
+}
+.imagen-pant img:hover {
+    transform: scale(1.2);
+    padding-bottom: 13%;
+}
+
+#catalogo-pant #contenedor-pant > .pant a {
     font-size: 24px;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 50%;
+    color: black;
+    background-color: #FFD700;
+    padding: 2% 9%;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+#catalogo-pant  #contenedor-pant > .pant a:hover {
+    background-color: #1ED8AB;
+    font-family: 'Montserrat', sans-serif;
+}
+#catalogo-pant #contenedor-pant > .pant p {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    padding: 4% 0;
 }
 
 .flecha.izquierda {
@@ -744,6 +763,7 @@ nav > #enlaces{
     background-color: #1ED8AB;
     font-family: 'Montserrat', sans-serif;
 }
+
 
 
 
