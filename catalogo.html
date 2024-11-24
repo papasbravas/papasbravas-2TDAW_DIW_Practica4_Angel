@@ -26,10 +26,10 @@
     <main>
         <section class="catalogo">
             <div class="productos">
-                <div class="producto"><img src="./Inicio/catalogo.jpg" alt="Camiseta Pac-Man"></div>
-                <div class="producto"><img src="./Inicio/zapatillas.webp" alt="Zapatillas Anime"></div>
-                <div class="producto"><img src="./Inicio/pantalon.png" alt="Pantalón Anime"></div>
-                <div class="producto"><img src="./Inicio/gorra.jpg" alt="Gorra Naruto"></div>
+                <div class="producto-in"><img src="./Inicio/catalogo.jpg" alt="Camiseta Pac-Man"></div>
+                <div class="producto-in"><img src="./Inicio/zapatillas.webp" alt="Zapatillas Anime"></div>
+                <div class="producto-in"><img src="./Inicio/pantalon.png" alt="Pantalón Anime"></div>
+                <div class="producto-in"><img src="./Inicio/gorra.jpg" alt="Gorra Naruto"></div>
             </div>
         </section>
         <section id="catalogo-camisetas">
@@ -88,8 +88,54 @@
                 <img src="./Catalogo/bannerMHA.jpg" alt="Banner Zelda">
             </div>
         </section>
-        <section></section>
-        <section></section>
+        <section id="pantalon">
+            <h2>PANTALONES</h2>
+    
+            <div class="producto">
+                <div class="producto-titulo" onclick="mostrar(this)">
+                    Pantalones Goku - Dragon Ball
+                    <span>+</span>
+                </div>
+                <div class="producto-detalle">
+                    <img src="./Catalogo/Pantalones/1.jpg" alt="Pantalones Goku">
+                    <p>Pantalones inspirados en Dragon Ball, con diseño de Goku en color naranja y negro.</p>
+                    <a href="#">Añadir al carrito</a>
+                </div>
+            </div>
+    
+            <div class="producto">
+                <div class="producto-titulo" onclick="mostrar(this)">
+                    Pantalones Mario Bros
+                    <span>+</span>
+                </div>
+                <div class="producto-detalle">
+                    <img src="./Catalogo/Pantalones/2.jfif" alt="Pantalones Mario Bros">
+                    <p>Pantalones rojos con diseño de Mario y Luigi, perfectos para fanáticos de Nintendo.</p>
+                    <a href="#">Añadir al carrito</a>
+                </div>
+            </div>
+        </section>
+        <section class="lista-productos">
+            <h2>COMPLEMENTOS</h2>
+            <div class="producto-comp">
+                <img src="./Catalogo/Complementos/calcetinesONE.webp" alt="Calcetines One Piece">
+                <div class="info">
+                    <h3>Calcetines One Piece</h3>
+                    <p>$9.99</p>
+                    <p>Calcetines inspirados en el anime One Piece, cómodos y con estilo.</p>
+                    <a href="#">Añadir al carrito</a>
+                </div>
+            </div>
+            <div class="producto-comp">
+                <img src="./Inicio/gorra.jpg" alt="Gorra Naruto">
+                <div class="info">
+                    <h3>Gorra Naruto</h3>
+                    <p>$12.99</p>
+                    <p>Gorra inspirada en Naruto, con diseño minimalista del símbolo Konoha.</p>
+                    <a href="#">Añadir al carrito</a>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
         <nav>
@@ -115,5 +161,6 @@
             </div>
         </nav>
     </footer>
+    <script src="animaciones.js"></script>
 </body>
 </html>
