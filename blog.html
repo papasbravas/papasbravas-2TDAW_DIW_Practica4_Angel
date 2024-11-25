@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/x-icon" href="./LogoTienda.png">
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="logo">
+                <a href="./index.html"><img src="./LogoTienda.png" alt=""></a>
+            </div>
+            <div id="enlaces">
+                <a href="./index.html">Inicio</a>
+                <a href="./catalogo.html">Catalogo</a>
+                <a href="./localizacion.html">Localizacion</a>
+                <a href="./info.html">Informacion</a>
+                <a href="blog.html">Blog</a>
+                <a href="">Inicio de sesion</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1 id="blog">Noticias y Tendencias</h1>
+        <section id="noticias">
+            <h2>Noticias de Anime y Videojuegos</h2>
+            <div class="noticias-grid">
+                <article>
+                    <img src="./Blog/Noticias/attack.jpg" alt="Noticia 1">
+                    <h3>¡Nueva temporada de Attack on Titan!</h3>
+                    <p>La esperada temporada final de Attack on Titan ya tiene fecha de lanzamiento. Conoce cómo puedes inspirarte para tus outfits.</p>
+                    <a href="#">Leer más</a>
+                </article>
+                <article>
+                    <img src="./Blog/Noticias/db.jpg" alt="Noticia 2">
+                    <h3>Dragon Ball estrena nuevo videojuego</h3>
+                    <p>Descubre las novedades del próximo título de Dragon Ball y cómo está conquistando a los fans del género de lucha.</p>
+                    <a href="#">Leer más</a>
+                </article>
+            </div>
+        </section>
+        <section id="tendencias">
+            <h2>Tendencias de Moda</h2>
+            <div class="tendencias-carrusel">
+                <div class="tendencia-item">
+                    <img src="./Catalogo/Camisetas/1.jpg" alt="Tendencia 1">
+                    <div class="tendencia-texto">
+                        <h3>Colección Limitada: Naruto x Adidas</h3>
+                        <p>Explora nuestra nueva colaboración con Adidas inspirada en la saga de Naruto. ¡Stock limitado!</p>
+                    </div>
+                </div>
+                <div class="tendencia-item">
+                    <img src="./Catalogo/Camisetas/1.jpg" alt="Tendencia 2">
+                    <div class="tendencia-texto">
+                        <h3>Zapatos que marcan diferencia</h3>
+                        <p>Explora zapatillas temáticas que te permitirán destacar en cualquier lugar.</p>
+                    </div>
+                </div>
+                <div class="tendencia-item">
+                    <img src="./Catalogo/Camisetas/1.jpg" alt="Tendencia 3">
+                    <div class="tendencia-texto">
+                        <h3>Complementos para los fans</h3>
+                        <p>Los accesorios perfectos para complementar tu look y mostrar tu pasión por el anime y los videojuegos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carrusel-botones">
+                <button id="prev">❮</button>
+                <button id="next">❯</button>
+            </div>
+        </section>
+        <section id="comunidad">
+            <h2>Comunidad</h2>
+            <p>¡Queremos escuchar tu opinión! Déjanos tus comentarios sobre qué te gustaría ver en nuestra tienda o participa en nuestras encuestas.</p>
+            <form>
+                <label for="mensaje">Tu mensaje:</label>
+                <textarea id="mensaje" rows="5" placeholder="Escribe aquí..."></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <nav>
+            <div class="contacto">
+                <p>contacto@pixelthreads.com</p>
+                <p>Teléfono: 000 000 000</p>
+            </div>
+            <div class="redes">
+                <h3>Pixel Threads</h3>
+                <p>Tu pasión, en cada prenda</p>
+                <div class="iconos-redes">
+                    <img src="./Inicio/instagram 1.png" alt="Instagram">
+                    <img src="./Inicio/facebook 1.png" alt="Facebook">
+                    <img src="./Inicio/X 1.png" alt="X">
+                    <img src="./Inicio/tiktok 1.png" alt="TikTok">
+                </div>
+            </div>
+            <div class="enlaces">
+                <a href="./index.html">Enlace Inicio</a>
+                <a href="./catalogo.html">Enlace catálogo</a>
+                <a href="./localizacion.html">Enlace localización</a>
+                <a href="./info.html">Enlace información</a>
+                <a href="./blog.html">Enlace blog</a>
+            </div>
+        </nav>
+    </footer>
+    <script src="animaciones.js"></script>
+</body>
+</html>
