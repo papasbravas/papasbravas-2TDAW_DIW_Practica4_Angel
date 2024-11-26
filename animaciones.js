@@ -19,18 +19,18 @@ const carrusel = document.querySelector('.tendencias-carrusel');
         });
     }
 
-    function next() {
+    function siguiente() {
         currentIndex = (currentIndex + 1) % items.length;
         moveCarrusel(currentIndex);
     }
 
-    function prev() {
+    function anterior() {
         currentIndex = (currentIndex - 1 + items.length) % items.length; 
         moveCarrusel(currentIndex);
     }
 
-    nextButton.addEventListener('click', next);
-    prevButton.addEventListener('click', prev);
+    nextButton.addEventListener('click', siguiente);
+    prevButton.addEventListener('click', anterior);
 
-    setInterval(next, 5000);
+    setInterval(siguiente, 5000);
 
