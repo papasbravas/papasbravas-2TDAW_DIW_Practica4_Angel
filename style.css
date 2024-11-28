@@ -221,9 +221,13 @@ nav > .e{
 .slider1{
     margin: auto;
     align-items: center;
-    width: 60%;
+    width: 50%;
     padding-top: 2%;
 }
+.slider1 img{
+    min-height: 200px;
+}
+
 /*  */
 
 
@@ -719,16 +723,53 @@ nav > .e{
     object-fit: cover;
 }
 /* Arreglar para que la central sea más grande que las otras y hacer slider */
-.peq{
-    scale: 0.5;
+#zapa-izq{
+    background-color: #0077BE;
+    height: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 2%;
+    margin-top: 9%;
+    border: 3px solid black;
+    color: white;
 }
-.imagen-zapatilla img:hover {
-    transform: scale(1.2);
-    padding-bottom: 5%;
+#zapa-der{
+    background-color: #0077BE;
+    height: 50px;
+    font-size: 30px;
+    border-radius: 50%;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    width: 50px;
+    margin-left: 2%;
+    margin-top: 9%;
+    border: 3px solid black;
+    color: white;
+}
+#zapa-izq:hover{
+    background-color: #FFD700;
+    transition: 0.3s ease-in;
+    color: black;
+}
+#zapa-der:hover{
+    background-color: #FFD700;
+    transition: 0.3s ease-in;
+    color: black;
 }
 
+.peq{
+    scale: 0.9;
+}
+/* .imagen-zapatilla img:hover {
+    transform: scale(1.2);
+    padding-bottom: 5%;
+} */
+
 #catalogo-zapatillas #contenedor-zapatillas > .zapatilla a {
-    font-size: 24px;
+    font-size: 22px;
     color: black;
     background-color: #FFD700;
     padding: 2% 9%;
@@ -740,14 +781,13 @@ nav > .e{
     font-family: 'Montserrat', sans-serif;
 }
 #catalogo-zapatillas #contenedor-zapatillas > .zapatilla p {
-    font-size: 20px;
+    font-size: 26px;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     padding: 4% 0;
 }
 
 /* Zona Pantalones Catalogo */
-/* Desarrollar mejor este section */
 #catalogo-pant{
     padding-bottom: 3%;
 }
@@ -1211,7 +1251,7 @@ textarea {
     height: 100px;
 }
 
-button {
+.formmm{
     padding: 2%;
     font-size: 24px;
     font-weight: bold;
@@ -1223,7 +1263,7 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+.formmm:hover {
     background-color: #555;
 }
 .terms {

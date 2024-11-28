@@ -6,31 +6,35 @@ function mostrar(element) {
 }
 
 const carrusel = document.querySelector('.tendencias-carrusel');
-    const items = document.querySelectorAll('.tendencia-item');
-    const prevButton = document.getElementById('prev');
-    const nextButton = document.getElementById('next');
-    let currentIndex = 0;
+const items = document.querySelectorAll('.tendencia-item');
+const ant = document.getElementById('prev');
+const sig = document.getElementById('next');
+let currentIndex = 0;
 
-    function moveCarrusel(index) {
-        const itemWidth = items[0].clientWidth + 20; 
-        carrusel.scrollTo({
-            left: index * itemWidth,
-            behavior: 'smooth'
-        });
-    }
+function moveCarrusel(index) {
+    const itemWidth = items[0].clientWidth + 20; 
+    carrusel.scrollTo({
+        left: index * itemWidth,
+        behavior: 'smooth'
+    });
+}
 
-    function siguiente() {
-        currentIndex = (currentIndex + 1) % items.length;
-        moveCarrusel(currentIndex);
-    }
+function siguiente() {
+    currentIndex = (currentIndex + 1) % items.length;
+    moveCarrusel(currentIndex);
+}
 
-    function anterior() {
-        currentIndex = (currentIndex - 1 + items.length) % items.length; 
-        moveCarrusel(currentIndex);
-    }
+function anterior() {
+    currentIndex = (currentIndex - 1 + items.length) % items.length; 
+    moveCarrusel(currentIndex);
+}
 
-    nextButton.addEventListener('click', siguiente);
-    prevButton.addEventListener('click', anterior);
+sig.addEventListener('click', siguiente);
+ant.addEventListener('click', anterior);
 
-    setInterval(siguiente, 5000);
 
+// Hacer el slider de zapatillas
+const sli = document.querySelector('#contenedor-zapatillas');
+const zap = document.querySelectorAll('.zapatilla');
+const izq = document.getElementById('zapa-izq');
+const der = document.getElementById('zapa-der');
