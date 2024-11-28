@@ -63,35 +63,31 @@
         </section>
         <section id="catalogo-zapatillas">
             <h2 class="titulo-catalogo">ZAPATILLAS</h2>
-            <!-- <div class="contenedor-productos"> -->
-                <!-- <button class="flecha izquierda">&lt;</button> -->
                 <div id="contenedor-zapatillas">
                     <button id="zapa-izq"><</button>
                     <div class="zapatilla">
                         <div class="imagen-zapatilla">
-                            <img class="peq" src="./Catalogo/Zapatillas/3.jpg" alt="Zapatillas Nezuko">
+                            <img class="peq" src="./Catalogo/Zapatillas/3.jpg" alt="">
                         </div>
-                            <!-- <p>Zapatillas Nezuko</p>
+                        <!-- <p>Zapatillas Nezuko</p>
                             <a href="#">Añadir al carrito</a> -->
                     </div>
                     <div class="zapatilla">
                         <div class="imagen-zapatilla">
-                            <img class="gra" src="./Catalogo/Zapatillas/2.jpg" alt="Zapatillas Nezuko">
+                            <img class="gra" src="./Catalogo/Zapatillas/2.jpg" alt="">
                         </div>
                             <p>Zapatillas Goku</p>
                             <a href="#">Añadir al carrito</a>
                     </div>
                     <div class="zapatilla">
                         <div class="imagen-zapatilla">
-                            <img class="peq" src="./Catalogo/Zapatillas/1.png" alt="Zapatillas Nezuko">
+                            <img class="peq" src="./Catalogo/Zapatillas/1.png" alt="">
                         </div>
-                            <!-- <p>Zapatillas Naruto</p>
+                        <!-- <p>Zapatillas Naruto</p>
                             <a href="#">Añadir al carrito</a> -->
                     </div>
                     <button id="zapa-der">></button>
                 </div>
-                <!-- <button class="flecha derecha">&gt;</button> -->
-            <!-- </div> -->
             <div class="banner-catalogo">
                 <img src="./Catalogo/bannerMHA.jpg" alt="Banner Zelda">
             </div>
@@ -170,6 +166,41 @@
             </div>
         </nav>
     </footer>
-    <script src="animaciones.js"></script>
+    <script>
+        if(screen.width > 1024){
+            const btnIzq = document.getElementById("zapa-izq");
+            const btnDer = document.getElementById("zapa-der");
+            const zapatillas = document.querySelectorAll(".zapatilla img");
+            const textoZapatilla = document.querySelector("#contenedor-zapatillas > .zapatilla p");
+            const textos = [
+                "Zapatillas Nezuko",
+                "Zapatillas Goku",
+                "Zapatillas Deku"
+            ];
+            function moverSlider(direccion) {
+                const indices = [...zapatillas].map((img) => img.classList.contains("gra"));
+                let indexCentral = indices.indexOf(true);
+
+                zapatillas[indexCentral].classList.remove("gra");
+                zapatillas[indexCentral].classList.add("peq");
+
+                if (direccion === "derecha") {
+                    indexCentral = (indexCentral + 1) % zapatillas.length;
+                    
+                } else {
+                    indexCentral = (indexCentral - 1 + zapatillas.length) % zapatillas.length;
+                }
+                zapatillas[indexCentral].classList.remove("peq");
+                zapatillas[indexCentral].classList.add("gra");
+                textoZapatilla.textContent = textos[indexCentral];
+            }
+            btnIzq.addEventListener("click", () => moverSlider("izquierda"));
+            btnDer.addEventListener("click", () => moverSlider("derecha"));
+        }else{
+
+        }
+        
+
+    </script>
 </body>
 </html>

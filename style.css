@@ -722,7 +722,6 @@ nav > .e{
     height: 400px;
     object-fit: cover;
 }
-/* Arreglar para que la central sea más grande que las otras y hacer slider */
 #zapa-izq{
     background-color: #0077BE;
     height: 50px;
@@ -759,15 +758,16 @@ nav > .e{
     transition: 0.3s ease-in;
     color: black;
 }
-
-.peq{
-    scale: 0.9;
+.peq {
+    height: 200px;
+    opacity: 0.5;
+    transform: scale(0.8);
 }
-/* .imagen-zapatilla img:hover {
-    transform: scale(1.2);
-    padding-bottom: 5%;
-} */
-
+.gra {
+    height: 300px;
+    opacity: 1;
+    transform: scale(1);
+}
 #catalogo-zapatillas #contenedor-zapatillas > .zapatilla a {
     font-size: 22px;
     color: black;
@@ -784,7 +784,71 @@ nav > .e{
     font-size: 26px;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-    padding: 4% 0;
+    padding-top: 12%;
+}
+@media (max-width: 768px) {
+    #catalogo-zapatillas #contenedor-zapatillas {
+        flex-wrap: nowrap;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+    }
+    .zapatilla {
+        min-width: 80%;
+        flex-shrink: 0;
+    }
+
+    .imagen-zapatilla img {
+        height: 250px;
+        width: 100%;
+    }
+    #zapa-izq,
+    #zapa-der {
+        height: 40px;
+        width: 40px;
+        font-size: 24px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    #zapa-izq {
+        left: 10px;
+    }
+
+    #zapa-der {
+        right: 10px;
+    }
+    #catalogo-zapatillas #contenedor-zapatillas > .zapatilla a {
+        font-size: 18px;
+        padding: 3% 6%;
+    }
+
+    #catalogo-zapatillas #contenedor-zapatillas > .zapatilla p {
+        font-size: 18px;
+    }
+}
+@media (max-width: 480px) {
+    .zapatilla {
+        min-width: 90%;
+    }
+    .imagen-zapatilla img {
+        height: 200px;
+    }
+    #zapa-izq,
+    #zapa-der {
+        height: 30px;
+        width: 30px;
+        font-size: 18px;
+    }
+
+    #zapa-izq {
+        left: 5px;
+    }
+
+    #zapa-der {
+        right: 5px;
+    }
 }
 
 /* Zona Pantalones Catalogo */

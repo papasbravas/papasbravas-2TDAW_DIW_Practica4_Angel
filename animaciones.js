@@ -33,8 +33,3 @@ sig.addEventListener('click', siguiente);
 ant.addEventListener('click', anterior);
 
 
-// Hacer el slider de zapatillas
-const sli = document.querySelector('#contenedor-zapatillas');
-const zap = document.querySelectorAll('.zapatilla');
-const izq = document.getElementById('zapa-izq');
-const der = document.getElementById('zapa-der');
