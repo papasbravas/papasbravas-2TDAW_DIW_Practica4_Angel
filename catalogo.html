@@ -69,22 +69,22 @@
                         <div class="imagen-zapatilla">
                             <img class="peq" src="./Catalogo/Zapatillas/3.jpg" alt="">
                         </div>
-                        <!-- <p>Zapatillas Nezuko</p>
-                            <a href="#">Añadir al carrito</a> -->
+                        <p class="text-zap">Zapatillas Nezuko</p>
+                        <a class="text-zap" href="#">Añadir al carrito</a>
                     </div>
                     <div class="zapatilla">
                         <div class="imagen-zapatilla">
                             <img class="gra" src="./Catalogo/Zapatillas/2.jpg" alt="">
                         </div>
-                            <p>Zapatillas Goku</p>
+                            <p class="texto-importante">Zapatillas Goku</p>
                             <a href="#">Añadir al carrito</a>
                     </div>
                     <div class="zapatilla">
                         <div class="imagen-zapatilla">
                             <img class="peq" src="./Catalogo/Zapatillas/1.png" alt="">
                         </div>
-                        <!-- <p>Zapatillas Naruto</p>
-                            <a href="#">Añadir al carrito</a> -->
+                        <p class="text-zap">Zapatillas Naruto</p>
+                        <a class="text-zap" href="#">Añadir al carrito</a>
                     </div>
                     <button id="zapa-der">></button>
                 </div>
@@ -171,11 +171,11 @@
             const btnIzq = document.getElementById("zapa-izq");
             const btnDer = document.getElementById("zapa-der");
             const zapatillas = document.querySelectorAll(".zapatilla img");
-            const textoZapatilla = document.querySelector("#contenedor-zapatillas > .zapatilla p");
+            const textoZapatilla = document.querySelector("#contenedor-zapatillas > .zapatilla .texto-importante");
             const textos = [
                 "Zapatillas Nezuko",
                 "Zapatillas Goku",
-                "Zapatillas Deku"
+                "Zapatillas Naruto"
             ];
             function moverSlider(direccion) {
                 const indices = [...zapatillas].map((img) => img.classList.contains("gra"));
